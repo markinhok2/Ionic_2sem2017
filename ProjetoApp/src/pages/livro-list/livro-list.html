@@ -1,9 +1,9 @@
 <ion-header>
-  <ion-navbar color="primary" *ngIf="!visibilidade">
+  <ion-navbar color="33cc33" *ngIf="!visibilidade">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Listagem Livros</ion-title>
+    <ion-title>Listagem de Livros</ion-title>
 
     <ion-buttons end>
       <button ion-button icon-only (click)="abrirPesquisa($event)">
@@ -15,7 +15,7 @@
     </ion-buttons>
   </ion-navbar>
 
-  <ion-navbar color="primary" *ngIf="visibilidade">
+  <ion-navbar *ngIf="visibilidade">
     <ion-searchbar [(ngModel)]="pesquisa"
                    [showCancelButton]="shouldShowCancel"
                    (ionInput)="pesquisar($event)"

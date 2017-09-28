@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cadastrar Autores</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Nome</ion-label>
+      <ion-input type="text" [(ngModel)]="autor.nome"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-buttons>
+    <button ion-button color="secondary" (click)="salvar($event)">Salvar</button>
+    <button ion-button color="light" (click)="cancelar()">Cancelar</button>
+  </ion-buttons>
+
+</ion-content>

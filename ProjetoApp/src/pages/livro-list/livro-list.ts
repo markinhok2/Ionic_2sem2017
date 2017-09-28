@@ -41,7 +41,7 @@ export class LivroListPage {
 
   abrirPesquisa (event){
     this.visibilidade = true;
-  }
+    }
 
   pesquisar(event){
     this.itemsFilter = this.items.filter((i) => {

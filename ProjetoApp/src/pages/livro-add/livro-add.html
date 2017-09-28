@@ -6,11 +6,11 @@
 -->
 <ion-header>
 
-  <ion-navbar color="primary">
+  <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Cadastro Livros</ion-title>
+    <ion-title>Cadastrar Livros</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -28,6 +28,11 @@
     <ion-item>
       <ion-label floating>Ano</ion-label>
       <ion-input type="number" [(ngModel)]="livro.ano"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Em Destaque</ion-label>
+      <ion-checkbox [(ngModel)]="livro.destaque"></ion-checkbox>
     </ion-item>
 
   </ion-list>

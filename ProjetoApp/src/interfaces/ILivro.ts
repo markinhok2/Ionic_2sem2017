@@ -3,4 +3,5 @@ export interface ILivro {
   titulo: string;
   ano: number;
   img: string;
+  destaque: boolean;
 }
